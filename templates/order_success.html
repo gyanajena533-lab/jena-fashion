@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<main class="content panel"><h1>Thank you! Your order is placed.</h1><p>Order #{{order.id}} · Status: {{order.status}}</p><p>Total: ₹{{order.total_amount}} · Payment: {{order.payment_status}} (Cash on Delivery)</p><a class="btn" href="{{url_for('my_orders')}}">View my orders</a></main>{% endblock %}
